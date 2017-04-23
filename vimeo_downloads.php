@@ -1,13 +1,24 @@
 <?php
 /**
+ * Vimeo Downloads
+ *
+ * @package     EastonStudio    
+ * @author      Bob Easton
+ * @license     GPL-2.0+
+ *
+ * @wordpress-plugin
  * Plugin Name: Vimeo Downloads
- * Plugin URI: http://www.bob-easton.com/wordpress/vimeo-downloads-plugin/
- * Description: Creates the bulk of a post containing a Vimeo video, complete with download links. The videos are "private" videos belong to a Vimeo PRO account.
- * Version: 0.5
- * Author: Bob Easton
- * Author URI: http://bob-easton.com
- * License: GPL2
+ * Plugin URI:  https://www.bob-easton.com/wordpress/vimeo-downloads/
+ * Description: A WordPress plugin to collect and display links for downloading Vimeo videos.
+ * Version:     0.5
+ * Author:      Bob Easton
+ * Author URI:  https://bob-easton.com/wordpress
+ * Text Domain: vimeo-downloads
+ * License:     GPL-2.0+
+ * License URI: http://www.gnu.org/licenses/gpl-2.0.txt
  */
+
+//namespace EastonStudio;
 
 /*
  * People will be amazed by your success.
@@ -58,9 +69,9 @@ function vimeo_downloads_shortcode( $atts ) {
 	$video_ID = $atts[video_id];
 	if (!empty($video_ID)) {
 		$options = get_option('vd_settings');
-		$content = $options['vd_preface'];
+                $content = $options['vd_preface'];
 		$response =  getVideo($video_ID);
-		if ($response['body']['error']) {
+                if ($response['body']['error']) {
 			$content = 'Uh-Oh! - The download files cannot be found.<br>Please use the <a href="https://www.marymaycarving.com/carvingschool/contact/">Contact form</a> to tell us about this problem.' ;
 		} else {
 			$count = (count($response['body']['download']));

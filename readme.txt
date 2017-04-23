@@ -1,19 +1,21 @@
 === Vimeo Downloads ===
 Contributors: Bob Easton
 Requires at least: 2.7
-Tested up to: 4.1
+Tested up to: 4.7
 License: GPL2
 License URI: http://www.gnu.org/copyleft/gpl.html
 
-Creates the bulk of a post containing a Vimeo video, complete with download links. The videos are \\\"private\\\" videos belong to a Vimeo PRO account.
+This plugin collects and displays links for downloading Vimeo videos.
 
 == Description ==
-The outline is pretty simple:
+A shortcode specifies a Vimeo video ID number.
+The plugin:
+1. Requests file download links for the video from Vimeo.
+2. Organizes the links by size.
+3. Wraps the links in HTML and presents them to the visitor as buttons.
 
-- specify the ID of the desired video
-- ask Vimeo what download file links are available
-- wrap them in some HTML that makes them pretty
-- BAM! Present them to the viewer
+A Settings page is provided to collect several tokens from Vimeo.
+** Note Well: ** Vimeo provides download links for videos hosted on their "Pro" service. Download links are **NOT** available for videos posted on the Free Vimeo service.
 
 Plugin users will need several \"tokens\" from their Vimeo Pro API Apps account..
 Details at: http://www.bob-easton.com/wordpressmembershipsites/vimeo-downloads-plugin/
@@ -21,21 +23,28 @@ Details at: http://www.bob-easton.com/wordpressmembershipsites/vimeo-downloads-p
 == Installation ==
 Standard WordPress install.
 Plugins > Add New > Upload the .zip file > Activate
+**Be sure** to configure the settings.
 
-THEN, find the Settings > Vimeo Downloads page and configure with API tokens.
+=== Settings ===
+1. Start at the Vimeo Developer's page: https://developer.vimeo.com/
+2. Add your "App" at: https://developer.vimeo.com/apps
+3. Collect tokens at: https://developer.vimeo.com/apps/102154#authentication
+4. THEN, find the Settings > Vimeo Downloads page and configure with API tokens.
 
 == Screenshots ==
-1. Settings page - http://www.bob-easton.com/wordpressmembershipsites/wp-content/uploads/2015/01/vd-settings.png
-2. Typical usage - http://www.bob-easton.com/wordpressmembershipsites/wp-content/uploads/2015/01/vd-2.png
-3. Typical result - http://www.bob-easton.com/wordpressmembershipsites/wp-content/uploads/2015/01/vd-3.png
+1. Settings page - https://www.bob-easton.com/wordpress/wp-content/uploads/2017/04/vimeo-downloads-settings.png
+2. Typical usage - https://www.bob-easton.com/wordpress/wp-content/uploads/2017/04/vimeo-downloads-shortcode.png
+3. Typical result - https://www.bob-easton.com/wordpress/wp-content/uploads/2017/04/vimeo-downloads-results.png
 
 == Changelog ==
-0.4
+= 0.5 =
+Minor refactoring and posted in Github.
+= 0.4 =
 Extended text in button labels.  HD ->  HD High Definition, etc.
-0.3
+= 0.3 =
 Sorted results, ascending by file size.
-0.2
+= 0.2 =
 Options page added. Account parameters are now held in the database, via a Settings page, instead of being hard coded in the plugin module.
-0.1
+= 0.1 =
 Basic code. All parameters contained within.
 Operates as a shortcode processor.

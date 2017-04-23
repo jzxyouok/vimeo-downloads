@@ -1,3 +1,7 @@
+NOTE WELL: The Vimeo Downloads plugin requires a Vimeo Plus account (or better).
+"Free" accounts do not provide access to videos via download links.
+When used with "Free" accounts the plugin will fail to acquire any usefull information from Vimeo.
+
 1. Create a Vimeo "App" - https://developer.vimeo.com/apps
 APP - Bob's Videos	
 
@@ -11,3 +15,6 @@ WJyXdN3uOXAbmXPJZ09kGQUP9EV9UgF9UVPiliAoHUSqTOaf8qe9seV/fsGVdAnldcryMcxRm3M6uqfR
 
 Generate - Access Token - Public - Private
 4600537b0b22a88c05fcef12b3946d5d
+
+test video
+https://vimeo.com/53014352
