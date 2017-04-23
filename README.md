@@ -34,8 +34,6 @@ A Settings page is provided to specify several token strings from Vimeo.
 
 Plugin users will need several tokens from their Vimeo Pro API Apps account.
 
-Details at: http://www.bob-easton.com/wordpressmembershipsites/vimeo-downloads-plugin/
-
 # Installation
 Standard WordPress install.
 
