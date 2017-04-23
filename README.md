@@ -1,28 +1,38 @@
 # Vimeo Downloads
 Contributors: Bob Easton
+
 Requires at least: 2.7
+
 Tested up to: 4.7
+
 License: GPL2
+
 License URI: http://www.gnu.org/copyleft/gpl.html
 
 This plugin collects and displays links for downloading Vimeo videos.
 
 # Description
 A shortcode specifies a Vimeo video ID number.
+
 The plugin:
+
 1. Requests file download links for the video from Vimeo.
 2. Organizes the links by size.
 3. Wraps the links in HTML and presents them to the visitor as buttons.
 
 A Settings page is provided to collect several tokens from Vimeo.
-** Note Well: ** Vimeo provides download links for videos hosted on their "Pro" service. Download links are **NOT** available for videos posted on the Free Vimeo service.
+
+**Note Well:** Vimeo provides download links for videos hosted on their "Pro" service. Download links are **NOT** available for videos posted on the Free Vimeo service.
 
 Plugin users will need several \"tokens\" from their Vimeo Pro API Apps account..
+
 Details at: http://www.bob-easton.com/wordpressmembershipsites/vimeo-downloads-plugin/
 
 # Installation
 Standard WordPress install.
+
 Plugins > Add New > Upload the .zip file > Activate
+
 **Be sure** to configure the settings.
 
 ## Settings
