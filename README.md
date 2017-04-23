@@ -5,14 +5,22 @@ Requires at least: 2.7
 
 Tested up to: 4.7
 
+Plugin url: https://www.bob-easton.com/wordpress/vimeo-downloads/
+
 License: GPL2
 
 License URI: http://www.gnu.org/copyleft/gpl.html
 
-This plugin collects and displays links for downloading Vimeo videos.
+The video service provider, Vimeo, offers both video playback and video download services to its PRO members. The links for individual video downloads are buried in "Settings" files for each video and are not at all convenient for blog authors to access. 
+
+This plugin collects and displays download links for Vimeo videos.
+
+**Note Well:** Vimeo provides download links for videos hosted on their "Pro" service. Download links are **NOT** available for videos posted on the Free Vimeo service.
 
 # Description
-A shortcode specifies a Vimeo video ID number.
+A simple shortcode, embedded in a post, specifies a Vimeo video ID number.
+
+For example: [vimeo_downloads video_id="nnnnnnnnn"]
 
 The plugin:
 
@@ -20,11 +28,11 @@ The plugin:
 2. Organizes the links by size.
 3. Wraps the links in HTML and presents them to the visitor as buttons.
 
-A Settings page is provided to collect several tokens from Vimeo.
+A Settings page is provided to specify several token strings from Vimeo.
 
 **Note Well:** Vimeo provides download links for videos hosted on their "Pro" service. Download links are **NOT** available for videos posted on the Free Vimeo service.
 
-Plugin users will need several \"tokens\" from their Vimeo Pro API Apps account..
+Plugin users will need several tokens from their Vimeo Pro API Apps account.
 
 Details at: http://www.bob-easton.com/wordpressmembershipsites/vimeo-downloads-plugin/
 
@@ -47,14 +55,19 @@ Plugins > Add New > Upload the .zip file > Activate
 3. Typical result - https://www.bob-easton.com/wordpress/wp-content/uploads/2017/04/vimeo-downloads-results.png
 
 # Changelog
-## 0.5
+### 0.5
 Minor refactoring and posted in Github.
-## 0.4
+### 0.4
 Extended text in button labels.  HD ->  HD High Definition, etc.
-## 0.3
+### 0.3
 Sorted results, ascending by file size.
-## 0.2
+### 0.2
 Options page added. Account parameters are now held in the database, via a Settings page, instead of being hard coded in the plugin module.
-## 0.1
+### 0.1
 Basic code. All parameters contained within.
+
 Operates as a shortcode processor.
+
+## Contributions
+
+All feedback, bug reports, and pull requests are welcome.
