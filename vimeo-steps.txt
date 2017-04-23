@@ -1,0 +1,13 @@
+1. Create a Vimeo "App" - https://developer.vimeo.com/apps
+APP - Bob's Videos	
+
+Collect authentication details - https://developer.vimeo.com/apps/102154#authentication
+
+Client Identifier
+dbf6fa966e7ac6ad7eb595f4e1d8c3a6cf2a1fa1
+
+Client Secrets
+WJyXdN3uOXAbmXPJZ09kGQUP9EV9UgF9UVPiliAoHUSqTOaf8qe9seV/fsGVdAnldcryMcxRm3M6uqfRN7JQFjZs5mfAhhg+p4fAF4mBw/NzcQ1VPcqIzN7+1w3Fc6b8
+
+Generate - Access Token - Public - Private
+4600537b0b22a88c05fcef12b3946d5d
